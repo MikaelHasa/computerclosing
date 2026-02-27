@@ -5,7 +5,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div className='image_container'>
-          <img src='/hm.svg' className="App-logo" alt="logo" />
+          <img src='/sadhampter.png' className="App-logo" alt="logo" />
         </div>
         <div className='button_container'>
           <button className='button-85' onClick={() => {
@@ -25,7 +25,7 @@ function App() {
                 console.log(data);
               });
           }}>
-            Restart
+            Sleep
           </button>
         </div>
       </header>

@@ -4,7 +4,7 @@ function shutdown() {
 }
 
 function eep() {
-  spawn('shutdown -s -t 120', [], { shell: true, stdio: 'inherit' });
+  spawn('shutdown -h', [], { shell: true, stdio: 'inherit' });
 }
 
 
