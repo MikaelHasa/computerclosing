@@ -1,1 +1,0 @@
-dumb app so u can close your computer through network from phone :3
