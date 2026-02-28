@@ -11,27 +11,17 @@ app.use(cors());
 app.use('/static', express.static(path.join(__dirname, 'build/static')));
 app.use('/', express.static(path.join(__dirname, 'build')));
 
-app.get('/', (req: Request, res: Response) => {
-  res.send('Hello World from TypeScript Express!');
-});
-
 app.get('/shutdown', async (req: Request, res: Response) => {
   const shutdownData = req.headers['user-agent'];
   console.log(shutdownData);
-
-  if (shutdownData && shutdownData.includes('Mozilla/5.0 (Android 15; Mobile; rv:148.0) Gecko/148.0 Firefox/148.0')) {
-    shutdown();
-  }
+  shutdown();
 
 });
 
 app.get('/sleep', (req: Request, res: Response) => {
   const sleepData = req.headers['user-agent'];
   console.log(sleepData);
-
-  if (sleepData && sleepData.includes('Mozilla/5.0 (Android 15; Mobile; rv:148.0) Gecko/147.0 Firefox/147.0')) {
-    eep();
-  }
+  eep();
 
 });
 

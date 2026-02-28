@@ -9,7 +9,7 @@ function App() {
         </div>
         <div className='button_container'>
           <button className='button-85' onClick={() => {
-            fetch('http://192.168.1.196:3001/shutdown')
+            fetch('http://192.168.1.196:3052/shutdown')
               .then(response => response.text())
               .then(data => {
                 console.log(data);
@@ -19,7 +19,7 @@ function App() {
           </button>
         
           <button className='button-85' onClick={() => {
-            fetch('http://192.168.1.196:3001/sleep')
+            fetch('http://192.168.1.196:3052/sleep')
               .then(response => response.text())
               .then(data => {
                 console.log(data);
